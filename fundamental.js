@@ -48,3 +48,11 @@ console.log(cal(10, 50, '-'));
 console.log(cal(10, 5, '*'));
 console.log(cal(10, 5, '/'));
 console.log(cal(10, 0, '/'));
+
+
+//6. Skip multiples of 2 & 3
+for (let i = 0; i <= 30; i++) {
+    if (i % 3 === 0 || i % 2 === 0) 
+        continue;
+    console.log(i);
+}
