@@ -84,3 +84,10 @@ function isPalindrome(str){
 }
 console.log("Is 'madam' a palindrome?", isPalindrome("madam"));
 console.log("Is '12321' a palindrome?", isPalindrome("12321"));
+
+
+//10. Vowels Count
+function countVowels(str){
+    return (str.match(/[aeiouAEIOU]/g) || []).length;
+}
+console.log("Number of vowels in 'Hello World':", countVowels("Hello World"));
