@@ -75,3 +75,12 @@ function cTof(celsius){
     return (celsius * 9/5) + 32;
 }
 console.log("35 degrees celsius is equal to", cTof(35) + " degrees fahrenheit");
+
+
+//9. Palindrome Check
+function isPalindrome(str){
+    const cleaned = str.toUpperCase().replace(/[^A-Z]/g, '');
+    return cleaned === cleaned.split('').reverse().join('');
+}
+console.log("Is 'madam' a palindrome?", isPalindrome("madam"));
+console.log("Is '12321' a palindrome?", isPalindrome("12321"));
