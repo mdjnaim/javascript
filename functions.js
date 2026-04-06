@@ -38,3 +38,17 @@ const counter = createCounter();
 counter();
 counter();
 counter();
+
+
+//6. Greeting by time
+function greetByTime(){
+    const hour = new Date().getHours();
+    if (hour < 12) {
+        console.log("Good Morning");
+    } else if (hour < 18) {
+        console.log("Good Afternoon");
+    } else {
+        console.log("Good Evening");
+    }
+}
+greetByTime();
