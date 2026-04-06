@@ -68,3 +68,10 @@ function largestOfThree(a, b, c) {
         return c;
 }
 console.log("Largest number from 30, 65, and 45 is:", largestOfThree(30, 65, 45));
+
+
+//8. Celsius to Fahrenheit
+function cTof(celsius){
+    return (celsius * 9/5) + 32;
+}
+console.log("35 degrees celsius is equal to", cTof(35) + " degrees fahrenheit");
