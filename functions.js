@@ -17,3 +17,10 @@ function runAfter4Sec(callback){
     setTimeout(callback, 4000);
 }
 runAfter4Sec(() => console.log("This runs after 4 seconds"));
+
+
+//4. Sum all
+function sumAll(...numbers){
+    return numbers.reduce((total, current) => total + current, 0);
+}
+console.log("Sum of 1, 2, 3, 4, 5 is:", sumAll(1, 2, 3, 4, 5));
