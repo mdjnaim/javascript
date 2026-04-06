@@ -59,3 +59,12 @@ function applyTwice(func, value){
     return func(func(value));
 }
 console.log(applyTwice(x => x * 2, 5));
+
+
+//8. Sum of digits
+function sumOfDigits(n){
+    if (n < 10)
+        return n;
+    return (n % 10) + sumOfDigits(Math.floor(n / 10));
+}
+console.log("Sum of digits in 1234 is:", sumOfDigits(1234));
