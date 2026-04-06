@@ -8,7 +8,7 @@ console.log(typeof isStudent);
 
 
 //2. Variables and Operators
-let a = 10, b = 20;
+let a = 11, b = 21;
 let sum = a + b;
 let difference = a - b;
 let product = a * b;
@@ -22,3 +22,7 @@ console.log(division);
 //3. Swapping Variables
 [a, b] = [b, a];
 console.log("After swapping:", a, b);
+
+
+//4. Even or Odd
+console.log(a % 2 === 0 ? "Even" : "Odd");
