@@ -91,3 +91,15 @@ function countVowels(str){
     return (str.match(/[aeiouAEIOU]/g) || []).length;
 }
 console.log("Number of vowels in 'Hello World':", countVowels("Hello World"));
+
+
+//11. Fibonacci Sequence
+function fibonacci(n){
+    let num1 = 0, num2 = 1;
+    while (num1 <= n) {
+        console.log(num1);
+        [num1, num2] = [num2, num1 + num2];
+    }
+}
+console.log("Fibonacci sequence up to 100:");
+fibonacci(100);
