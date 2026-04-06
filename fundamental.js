@@ -56,3 +56,15 @@ for (let i = 0; i <= 30; i++) {
         continue;
     console.log(i);
 }
+
+
+//7. Largest of Three Numbers
+function largestOfThree(a, b, c) {
+    if (a >= b && a >= c)
+        return a;
+    else if (b >= a && b >= c)
+        return b;
+    else 
+        return c;
+}
+console.log("Largest number from 30, 65, and 45 is:", largestOfThree(30, 65, 45));
