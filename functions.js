@@ -52,3 +52,10 @@ function greetByTime(){
     }
 }
 greetByTime();
+
+
+//7. Apply twice
+function applyTwice(func, value){
+    return func(func(value));
+}
+console.log(applyTwice(x => x * 2, 5));
