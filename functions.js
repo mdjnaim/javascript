@@ -82,3 +82,15 @@ function memoize(fn) {
 }
 const memoizedFactorial = memoize(factorial);
 console.log("Memoized factorial of 5 is:", memoizedFactorial(5));
+
+
+//10. Return multiple values
+function getUser(){
+    return {
+        name: "John Doe",
+        age: 30,
+        city: "New York"
+    };
+}
+const {name, age, city} = getUser();
+console.log(`Name: ${name}, Age: ${age}, City: ${city}`);
