@@ -68,3 +68,17 @@ function sumOfDigits(n){
     return (n % 10) + sumOfDigits(Math.floor(n / 10));
 }
 console.log("Sum of digits in 1234 is:", sumOfDigits(1234));
+
+
+//9. Memoization
+function memoize(fn) {
+    const cache = {};
+    return function(n) {
+        if (cache[n] !== undefined) 
+            return cache[n];
+        cache[n] = fn(n);
+        return cache[n];
+    }
+}
+const memoizedFactorial = memoize(factorial);
+console.log("Memoized factorial of 5 is:", memoizedFactorial(5));
