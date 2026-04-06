@@ -24,3 +24,17 @@ function sumAll(...numbers){
     return numbers.reduce((total, current) => total + current, 0);
 }
 console.log("Sum of 1, 2, 3, 4, 5 is:", sumAll(1, 2, 3, 4, 5));
+
+
+//5. Call counter
+function createCounter(){
+    let count = 0;
+    return function(){
+        count++;
+        console.log(`Called ${count} times`);
+    }
+}
+const counter = createCounter();
+counter();
+counter();
+counter();
