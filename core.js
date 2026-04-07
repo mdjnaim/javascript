@@ -34,3 +34,14 @@ const obj = {
 }
 obj.regular(); 
 obj.arrow();   
+
+
+//4. Prototype
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.speak = function(){
+    console.log(`Hi, I'm ${this.name}`);
+}
+const alice = new Person("Alice");
+alice.speak();
