@@ -47,3 +47,11 @@ async function allTasks() {
     console.log(a, b, c);
 }
 allTasks();
+
+
+//6. Promise race
+Promise.race([
+    new Promise(res => setTimeout(() => res("First"), 200)),
+    new Promise(res => setTimeout(() => res("Second"), 100))
+])
+    .then(result => console.log("Race result:", result));
