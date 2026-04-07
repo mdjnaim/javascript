@@ -46,4 +46,6 @@ names.sort((a, b) => a.localeCompare(b));
 console.log("Sorted names:", names);
 
 
-//8. 
+//8. Flatten array
+const nested = [1, [2, [3, [4]]]];
+console.log("Flattened array:", nested.flat(Infinity));
