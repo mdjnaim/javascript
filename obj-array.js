@@ -49,3 +49,8 @@ console.log("Sorted names:", names);
 //8. Flatten array
 const nested = [1, [2, [3, [4]]]];
 console.log("Flattened array:", nested.flat(Infinity));
+
+
+//9. Object entries
+const person = { name: "Alice", age: 30 };
+console.log("Object entries:", Object.entries(person));
