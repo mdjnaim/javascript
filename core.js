@@ -53,3 +53,7 @@ const parent = {greet(){
 }}
 const child = Object.create(parent);
 child.greet();
+
+//6. == vs ===
+console.log(5 == '5');  
+console.log(5 === '5'); 
