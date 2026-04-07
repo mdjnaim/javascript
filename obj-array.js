@@ -38,3 +38,12 @@ console.log("Total price:", total);
 const user = [{ id: 1, name:"Alice"},{ id: 2, name:"Bob"}];
 const found = user.find(n => n.id === 1);
 console.log("Found user:", found);
+
+
+//7. Sort alphabetically
+const names = ["Charlie", "Alice", "Bob"];
+names.sort((a, b) => a.localeCompare(b));
+console.log("Sorted names:", names);
+
+
+//8. 
