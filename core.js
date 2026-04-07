@@ -20,3 +20,17 @@ counter.increment();
 counter.increment();
 
 console.log("Current count:", counter.getCount());
+
+
+//3. Regular vs arrow functions
+const obj = {
+    name: "Alice",
+    regular: function(){
+        console.log("Regular function:", this.name);
+    },
+    arrow: () => {
+        console.log("Arrow function:", this?.name);
+    }
+}
+obj.regular(); 
+obj.arrow();   
