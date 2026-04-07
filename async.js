@@ -25,3 +25,25 @@ function getPosts(userId) {
 getUser()
     .then(user => getPosts(user.id))
     .then(posts => console.log("Posts for user:", posts));
+
+
+//4. Async/Await
+async function fetchUserAndPosts() {
+    const user = await getUser();
+    const posts = await getPosts(user.id);
+    console.log("User:", user);
+    console.log("Posts:", posts);
+}
+fetchUserAndPosts();
+
+
+//5. Promise all
+async function allTasks() {
+    const [a, b, c] = await Promise.all([
+        getUser(),
+        getPosts(1),
+        new Promise(resolve => setTimeout(() => resolve("Task 3 complete"), 1000))
+    ]);
+    console.log(a, b, c);
+}
+allTasks();
