@@ -25,3 +25,10 @@ console.log("Odd numbers:", oddNumbers);
 
 const evenNumbers = [1,2,3,4,5,6,7,8,9,10].filter(n => n% 2===0);
 console.log("Even numbers:", evenNumbers);
+
+
+//5. Reduce 
+const cart = [{item:"Book", price:200}, {item:"Pen", price:50}, {item:"Notebook", price:100}];
+const total = cart.reduce ((sum, product) => 
+    sum + product.price, 0);
+console.log("Total price:", total);
