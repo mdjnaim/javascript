@@ -54,3 +54,8 @@ console.log("Flattened array:", nested.flat(Infinity));
 //9. Object entries
 const person = { name: "Alice", age: 30 };
 console.log("Object entries:", Object.entries(person));
+
+//10. Remove duplicates
+const nums = [1, 2, 2, 3, 4, 4, 5];
+const unique = [...new Set(nums)];
+console.log("Unique numbers:", unique);
