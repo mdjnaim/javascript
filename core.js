@@ -45,3 +45,11 @@ Person.prototype.speak = function(){
 }
 const alice = new Person("Alice");
 alice.speak();
+
+
+//5. Object creation
+const parent = {greet(){
+    console.log("Hello from parent");
+}}
+const child = Object.create(parent);
+child.greet();
