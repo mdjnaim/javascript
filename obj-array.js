@@ -32,3 +32,9 @@ const cart = [{item:"Book", price:200}, {item:"Pen", price:50}, {item:"Notebook"
 const total = cart.reduce ((sum, product) => 
     sum + product.price, 0);
 console.log("Total price:", total);
+
+
+//6. Find specific user
+const user = [{ id: 1, name:"Alice"},{ id: 2, name:"Bob"}];
+const found = user.find(n => n.id === 1);
+console.log("Found user:", found);
