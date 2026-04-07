@@ -57,3 +57,10 @@ child.greet();
 //6. == vs ===
 console.log(5 == '5');  
 console.log(5 === '5'); 
+
+//7. IIFE (Immediately Invoked Function Expression)
+const appConfig = (function() {
+    const version = "1.0.0";
+    return { version };
+})();
+console.log("App version:", appConfig.version);
