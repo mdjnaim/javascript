@@ -64,3 +64,12 @@ const appConfig = (function() {
     return { version };
 })();
 console.log("App version:", appConfig.version);
+
+
+//8. var in loop issue
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 100); 
+}
+for (let j = 0; j < 3; j++) {
+    setTimeout(() => console.log(j), 100); 
+}
