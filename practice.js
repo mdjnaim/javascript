@@ -4,6 +4,7 @@ console.log('Sum = '+sum)
 
 
 //////////
+
 const n = parseFloat(prompt('Enter a num = '));
 const m = parseFloat(prompt('Enter a num = '));
 
@@ -12,7 +13,6 @@ const sum1=n+m;
 console.log(`The sum of ${n} and ${m} is ${sum1}`)
 
 ////////////////
-
 
 function summ(x,y){
    return (x+y);
@@ -23,6 +23,7 @@ console.log('Sum = '+summ(x,y));
 
 
 //////////
+
 const c=parseInt(prompt('1st value : '));
 const d=parseInt(prompt('2nd value : '));
 
@@ -87,6 +88,7 @@ const largest = Math.max(a,b,c,d);
 console.log('The largest number is '+ largest);
 
 //////////////////
+
 const e = parseFloat(prompt('Enter 1st value : '));
 const f = parseFloat(prompt('Enter 2nd value : '));
 const g = parseFloat(prompt('Enter 3rd value : '));
@@ -95,3 +97,23 @@ const h = parseFloat(prompt('Enter 4th value : '));
 const small = Math.min(e,f,g,h);
 
 console.log('The smallest number is '+small);
+
+////////////////////
+
+function large(num1,num2){
+   let large;
+   if(num1>num2){
+       large = num1;
+   }else{
+       large = num2;
+   }
+   return large;
+}
+const num1 = parseInt(prompt('Enter 1st value : '));
+const num2 = parseInt(prompt('Enter 2nd value : '));
+
+console.log('Largest value is : '+large(num1,num2));
+
+////////////////
+
+
