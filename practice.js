@@ -128,3 +128,24 @@ while(true){
     }
     min++;
 }
+
+///////////////
+
+const num = parseInt(prompt('Enter a positive number : '));
+let sum = 0;
+ for (i=0; i<=num; i++){
+     sum += i;
+ }
+ 
+ console.log('The sum of natural number is : ' +sum);
+
+  ////////////
+ 
+ const num1 = parseInt(prompt('Enter a positive number : '));
+ let result = 0, i = 0;
+ 
+ while(i <= num1){
+     result += i;
+     i++;
+ }
+ console.log('The sum of natural numbers : '+result);
