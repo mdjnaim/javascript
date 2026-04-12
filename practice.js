@@ -116,4 +116,15 @@ console.log('Largest value is : '+large(num1,num2));
 
 ////////////////
 
+const num1 = parseInt(prompt('Enter 1st value : '));
+const num2 = parseInt(prompt('Enter 2nd value : '));
 
+let min = (num1 > num2) ? num1 : num2;
+
+while(true){
+    if (min % num1 == 0 && min % num2 == 0){
+        console.log(`The LCM of ${num1} and ${num2} is ${min}`);
+        break;
+    }
+    min++;
+}
