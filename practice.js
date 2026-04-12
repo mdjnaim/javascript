@@ -31,5 +31,47 @@ const summm=(c,d)=>{
 }
 console.log('Sum = '+summm(c,d));
 
+//////////////
 
+const a = parseFloat(prompt('Enter first value : '));
+const b = parseFloat(prompt('Enter first value : '));
+const c = parseFloat(prompt('Enter first value : '));
+const g = parseFloat(prompt('Enter first value : '));
+let large;
+
+if(a>b && a>c && a>g){
+    large=a;
+}
+else if(b>a && b>c && b>g){
+    large=b;
+}
+else if(c>a && c>b &&c>g){
+    large=c;
+}
+else {
+    large=g;
+}
+console.log('Lagrest value is : '+large);
+
+/////////////
+
+const d = parseFloat(prompt('Enter first value : '));
+const e = parseFloat(prompt('Enter first value : '));
+const f = parseFloat(prompt('Enter first value : '));
+const h = parseFloat(prompt('Enter first value : '));
+let small;
+
+if (d<e && d<f && d<h){
+    small = d;
+}
+else if(e<d && e<f && e<h){
+    small = e;
+}
+else if(f<e && f<d && f<h){
+    small = f
+}
+else{
+    small = h;
+}
+console.log('Smallest value is : '+small);
 
