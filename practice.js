@@ -75,3 +75,23 @@ else{
 }
 console.log('Smallest value is : '+small);
 
+///////////
+
+const a = parseFloat(prompt('Enter first value : '));
+const b = parseFloat(prompt('Enter second value : '));
+const c = parseFloat(prompt('Enter third value : '));
+const d = parseFloat(prompt('Enter fourth value : '));
+
+const largest = Math.max(a,b,c,d);
+
+console.log('The largest number is '+ largest);
+
+//////////////////
+const e = parseFloat(prompt('Enter 1st value : '));
+const f = parseFloat(prompt('Enter 2nd value : '));
+const g = parseFloat(prompt('Enter 3rd value : '));
+const h = parseFloat(prompt('Enter 4th value : '));
+
+const small = Math.min(e,f,g,h);
+
+console.log('The smallest number is '+small);
