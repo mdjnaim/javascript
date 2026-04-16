@@ -163,3 +163,16 @@ let sum = 0;
 const number = parseInt(prompt('Enter a positive integer : '));
 const result = sum(number);
 console.log(`The sum is ${result}`);
+
+//guess number game
+let num = 56;
+let guess = parseInt(prompt('Guess a number between 1 and 100 : '));
+while(guess !== num){
+    if(guess < num){
+        console.log('Too low! Try again.');
+    }else{
+        console.log('Too high! Try again.');
+    }
+    guess = parseInt(prompt('Guess a number between 1 and 100 : '));
+}
+console.log('Congratulations! You guessed the number.');
