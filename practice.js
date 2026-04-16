@@ -176,3 +176,15 @@ while(guess !== num){
     guess = parseInt(prompt('Guess a number between 1 and 100 : '));
 }
 console.log('Congratulations! You guessed the number.');
+
+
+//////
+let num = prompt('Enter a number: ');
+    if(10<=num && 30>=num){
+        console.log('This is a number between 10 to 30.')
+    }
+    else if(50<=num && 90>=num && num%2!==0){
+        console.log('This is a odd number between 50 to 90.')
+    }else{
+        console.log('Input a correct number between 10 to 30 and 50 to 90.')
+    }
