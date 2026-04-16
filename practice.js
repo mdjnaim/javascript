@@ -199,3 +199,13 @@ for(let val of marks){
 }
 let avg = sum/marks.length;
 console.log("Average mark is : "+avg);
+
+////////////////
+
+let items = [250,645,300,900,50];
+console.log('Actual price: ',items);
+for(let i=0; i<=items.length-1;i++){
+   let offer = (items[i]*10) /100;
+   items[i] = items[i] - offer;
+}
+console.log('Offer price: ',items)
