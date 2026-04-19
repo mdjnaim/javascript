@@ -268,4 +268,25 @@ let expNum = (num) => {
     console.log(num**2);
 }
 arr.forEach((expNum)); 
+
+//////////////////
+
+let arr = [1,2,3,4,5,6,7,8,9,10]
+let newArr = arr.map((val) => {
+    if(val%2==0){
+         return val**2; 
+    }
+  
+});
+console.log(newArr);
+
+////////////////
+
+let newArr2 = arr.filter((val) => {
+    if(val%2==0){
+         return val**2; 
+    }
+  
+});
+console.log(newArr2);
   
