@@ -244,3 +244,13 @@ function squareNum(){
     }
 }
 squareNum();
+
+///////////////////
+
+const squareNum = () =>{
+    sqr = [1,2,3,4,5,6,7,8,9,10];
+    for(val of sqr){
+       console.log(val*val);
+    }
+}
+squareNum();
