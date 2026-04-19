@@ -296,4 +296,13 @@ let newArr3 = arr.reduce((pre, cur) => {
 return pre+cur; 
 });
 console.log(newArr3);
+
+///////////////
+
+let arr = [15,56,86,91,35,0,6,89,36,48,9,10]
+
+let newArr4 = arr.reduce((pre, cur) => {
+return pre > cur ? pre : cur; 
+});
+console.log(newArr4);
   
