@@ -282,6 +282,7 @@ console.log(newArr);
 
 ////////////////
 
+let arr = [1,2,3,4,5,6,7,8,9,10]
 let newArr2 = arr.filter((val) => {
     if(val%2==0){
          return val**2; 
@@ -292,6 +293,7 @@ console.log(newArr2);
 
 /////////
 
+let arr = [1,2,3,4,5,6,7,8,9,10]
 let newArr3 = arr.reduce((pre, cur) => {
 return pre+cur; 
 });
@@ -314,4 +316,22 @@ let newArr5 = arr.filter((marks) => {
 return marks>=90; 
 });
 console.log(newArr5);
+
+/////////////////
+
+let n = prompt('Enter a valid number : ');
+let arr = [];
+for (let i=1; i<=n; i++){
+    arr[i-1] = i;
+}
+let sumOfn = arr.reduce((pre,cur) => {
+    return pre + cur;
+});
+console.log("Sum of those value is : ",sumOfn);
+
+let mulOfn = arr.reduce((prev, curr) =>{
+    return prev*curr;
+});
+console.log("Multiply of those value is : ",mulOfn);
+
   
