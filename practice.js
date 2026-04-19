@@ -334,4 +334,30 @@ let mulOfn = arr.reduce((prev, curr) =>{
 });
 console.log("Multiply of those value is : ",mulOfn);
 
-  
+  ////////////
+
+  //Simple greeting function
+function greetName(name){
+    console.log('Hello ',name);
+}
+greetName('Naim');
+
+//Find out max value
+function findMax(a,b){
+    if(a>b){
+        console.log(`${a} is max value.`);
+    }else{
+        console.log(`${b} is max value.`);
+    }
+}
+findMax(506,98);
+
+//Odd even function
+function oddEven(num){
+    if(num % 2 == 0){
+        console.log('Even')
+    }else{
+        console.log('Odd')
+    }
+}
+oddEven(9);
