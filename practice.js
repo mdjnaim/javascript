@@ -209,3 +209,16 @@ for(let i=0; i<=items.length-1;i++){
    items[i] = items[i] - offer;
 }
 console.log('Offer price: ',items)
+
+//////////////
+function countVowel(str){
+    let count=0;
+    for(let i=0; i<=str.length-1; i++){
+        let char = str[i];
+        if(char==='a' || char==='e' || char==='i' || char==='o' || char==='u'){
+            count++;
+        }
+    }
+    console.log('vowel count : ', count);
+}
+countVowel('hgfryhgtll');
