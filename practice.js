@@ -361,3 +361,20 @@ function oddEven(num){
     }
 }
 oddEven(9);
+
+////////
+//Reverse array
+
+function reverseArray(arr){
+    const print = arr.reverse();
+    console.log('Reverse array : ',print);
+}
+reverseArray(['apple','banana','orange']);
+
+//Reverse string
+
+function reverseString(str){
+    const reverse = str.split('').reverse().join('');
+    console.log('Reverse string: ', reverse);
+}
+reverseString('amar sonar bangla');
