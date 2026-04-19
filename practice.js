@@ -222,3 +222,16 @@ function countVowel(str){
     console.log('vowel count : ', count);
 }
 countVowel('hgfryhgtll');
+
+/////////////////
+const vowel = (str) => {
+    let count = 0;
+    for (let i = 0; i <= str.length-1; i++){
+        let char = str[i];
+        if(char==='a'||char==='e'||char==='i'||char==='o'||char==='u'){
+            count++;
+        }
+    }
+    console.log('Vowel count: ',count);
+}
+vowel('asdfghjklzxcvbnmqwertyuiop');
