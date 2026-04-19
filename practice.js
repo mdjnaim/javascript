@@ -378,3 +378,25 @@ function reverseString(str){
     console.log('Reverse string: ', reverse);
 }
 reverseString('amar sonar bangla');
+
+///////////////
+
+//Remove duplicate array
+function removeDuplicate(arr){
+    let result = [];
+    for(let i=0; i<arr.length; i++){
+       if(!result.includes(arr[i])){
+           result.push(arr[i]);
+       }
+    }
+    console.log('Without duplicate value: ',result);
+}
+removeDuplicate([1,4,5,6,4,6,2,3,8,9,8,3,9]);
+
+//Remove duplicate array
+
+function removeArray(arr){
+    const unique = [...new Set(arr)];
+    console.log('Without duplicate value: ',unique);
+}
+removeArray([1,4,5,6,4,6,2,3,8,9,8,3,9]);
