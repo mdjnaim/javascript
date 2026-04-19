@@ -305,4 +305,13 @@ let newArr4 = arr.reduce((pre, cur) => {
 return pre > cur ? pre : cur; 
 });
 console.log(newArr4);
+
+///////////////////////
+
+let arr = [15,97,56,86,91,35,92,0,6,96,89,90,36,48,94,10]
+
+let newArr5 = arr.filter((marks) => {
+return marks>=90; 
+});
+console.log(newArr5);
   
