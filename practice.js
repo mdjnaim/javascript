@@ -289,4 +289,11 @@ let newArr2 = arr.filter((val) => {
   
 });
 console.log(newArr2);
+
+/////////
+
+let newArr3 = arr.reduce((pre, cur) => {
+return pre+cur; 
+});
+console.log(newArr3);
   
