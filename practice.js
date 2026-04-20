@@ -400,3 +400,18 @@ function removeArray(arr){
     console.log('Without duplicate value: ',unique);
 }
 removeArray([1,4,5,6,4,6,2,3,8,9,8,3,9]);
+
+///////////////
+
+// Word count
+function countWord(sentence, word){
+    let words = sentence.split(' ');
+    let count = 0;
+    for(let i=0; i<words.length; i++){
+        if(words[i] === word){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countWord('the cat sat on the mat', 'the'));
