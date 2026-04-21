@@ -538,3 +538,23 @@ class Rectangle{
 const m = new Rectangle(4,5);
 m.area();
 m.perimeter();
+
+///////////////
+
+class Student{
+    constructor(name, marks){
+        this.name = name;
+        this.marks = marks;
+    }
+    result(){
+        if (this.marks>33){
+            console.log(`You are pass. You obtain ${this.marks} marks.`);
+        }else{
+            console.log(`You are fail. You obtain ${this.marks} marks.`);
+        }
+    }
+}
+const check1 = new Student('Naim', 55);
+const check2 = new Student('Fahim', 25);
+check1.result();
+check2.result();
