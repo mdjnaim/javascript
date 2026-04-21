@@ -483,3 +483,24 @@ let car1 = {
     }
 }
 car1.showInfo();
+
+// Bank object with method
+
+let bank = {
+    balance: 50000,
+    deposit(amount){
+        this.balance += amount;
+        console.log(`Your account is debited ${amount} TK now your available balance is ${this.balance} TK.`);
+    },
+    withdraw(amount){
+        if(this.balance<amount){
+            console.log(`You don't have enough money.`);
+        }else{
+            this.balance -= amount;
+            console.log(`Your account is credited ${amount} TK now your available balance is ${this.balance} TK.`);
+        }
+    }
+};
+bank.deposit(500);
+bank.withdraw(1000);
+bank.withdraw(60000);
