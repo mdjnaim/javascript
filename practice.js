@@ -472,3 +472,14 @@ for (person of student){
     console.log(person.name);
     console.log(person.marks);
 }
+
+// Car object
+let car1 = {
+    brand: 'Honda',
+    model: 'Civic',
+    year: 2005,
+    showInfo(){
+        console.log(`This is ${this.brand} ${this.model} since ${this.year}`)
+    }
+}
+car1.showInfo();
