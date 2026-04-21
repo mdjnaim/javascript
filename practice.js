@@ -504,3 +504,17 @@ let bank = {
 bank.deposit(500);
 bank.withdraw(1000);
 bank.withdraw(60000);
+
+//////////////////
+
+class Animal{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    info(){
+        console.log(`Dog name is ${this.name} and age is ${this.age} years old.`);
+    }
+}
+const dog1 = new Animal('Ricky', 3 );
+dog1.info();
