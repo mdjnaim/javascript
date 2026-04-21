@@ -430,3 +430,45 @@ let person2 = {
 }
 console.log(person1);
 console.log(person2.age);
+
+// Object 
+
+let person1 = {
+    name: 'naim',
+    age: 25,
+    city: 'dhaka'
+}
+let person2 = {
+    name: 'Naim',
+    age: 26,
+    city: 'Dhaka'
+}
+console.log(person1);
+console.log(person2.age);
+
+// Car object
+let car1 = {
+    brand: 'Honda',
+    model: 'Civic',
+    year: 2025
+}
+console.log(car1);
+
+//Bank object
+let bank1 = {
+    deposit:5000,
+    withdraw:200,
+    balance:10000
+}
+console.log(bank1);
+
+//Student object
+let student = [
+    {name:'naim', marks:50},
+    {name:'fahim', marks:60},
+    {name:'nahin', marks:70}]
+for (person of student){
+    console.log(person);
+    console.log(person.name);
+    console.log(person.marks);
+}
