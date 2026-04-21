@@ -415,3 +415,18 @@ function countWord(sentence, word){
     return count;
 }
 console.log(countWord('the cat sat on the mat', 'the'));
+
+// Object 
+
+let person1 = {
+    name: 'naim',
+    age: 25,
+    city: 'dhaka'
+}
+let person2 = {
+    name: 'Naim',
+    age: 26,
+    city: 'Dhaka'
+}
+console.log(person1);
+console.log(person2.age);
