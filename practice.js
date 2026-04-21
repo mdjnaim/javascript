@@ -558,3 +558,30 @@ const check1 = new Student('Naim', 55);
 const check2 = new Student('Fahim', 25);
 check1.result();
 check2.result();
+
+
+//////////////////////////
+
+class BankAccount{
+    constructor(name, balance){
+        this.name = name;
+        this.balance = balance;
+    }
+    deposit(amount){
+        this.balance += amount;
+        console.log(`Mr/Mrs ${this.name} Your deposit amount is ${amount} tk and your available balance is ${this.balance} tk.`);
+    }
+    withdraw(amount){
+        this.balance -= amount;
+        console.log(`Mr/Mrs ${this.name} Your withdaw amount is ${amount} and your available balance is ${this.balance} tk.`);
+    }
+    showBalance(){
+        console.log(`Mr/Mrs ${this.name} Your available balance is ${this.balance} tk.`);
+    }
+}
+const quary1 = new BankAccount('Naim', 5000);
+const quary2 = new BankAccount('Fahim', 7000);
+quary1.deposit(500);
+quary2.deposit(1000);
+quary1.withdraw(5000);
+quary2.showBalance();
