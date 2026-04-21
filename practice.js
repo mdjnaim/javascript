@@ -518,3 +518,23 @@ class Animal{
 }
 const dog1 = new Animal('Ricky', 3 );
 dog1.info();
+
+//////////////////////
+
+class Rectangle{
+    constructor(height, width){
+        this.height = height;
+        this.width = width;
+    }
+    area(){
+        this.area = this.height * this.width;
+        console.log(`The area of rectangle is ${this.area}.`);
+    }
+    perimeter(){
+        this.perimeter = 2 * (this.height + this.width);
+        console.log(`The perimeter of rectangle is ${this.perimeter}.`)
+    }
+}
+const m = new Rectangle(4,5);
+m.area();
+m.perimeter();
