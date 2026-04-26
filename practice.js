@@ -585,3 +585,27 @@ quary1.deposit(500);
 quary2.deposit(1000);
 quary1.withdraw(5000);
 quary2.showBalance();
+
+///////////////
+
+function vowelsAndConsonants(s) {
+    for(let i=0; i<s.length; i++){
+        let vowel = s[i];
+        if(vowel=='a' || vowel=='e' || vowel=='i' || vowel=='o' || vowel=='u'){
+            console.log(vowel);
+        }
+    } 
+    for (let i=0; i<s.length; i++){
+        let consonant = s[i];
+        if(consonant!='a' && consonant!='e' && consonant!='i' && consonant!='o' && consonant!='u'){
+            console.log(consonant);
+        }
+    }
+}
+
+
+function main() {
+    const s = readLine();
+    
+    vowelsAndConsonants(s);
+}
