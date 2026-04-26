@@ -652,3 +652,24 @@ function main() {
     
     performOperation(secondInteger, secondDecimal, secondString);
 }
+
+//////////////////
+
+function reverseString(s) {
+    try{
+        
+        let rev = s.split("").reverse().join("");
+    console.log(rev);
+    }catch(error){
+        console.log(error.message);
+        console.log(s)
+    }
+}
+
+
+
+function main() {
+    const s = eval(readLine());
+    
+    reverseString(s);
+}
