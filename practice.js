@@ -609,3 +609,19 @@ function main() {
     
     vowelsAndConsonants(s);
 }
+
+//////////////
+
+
+function regexVar() {
+    const re = /^([aeiou]).*\1$|^[aeiou]$/;
+    return re;
+}
+
+
+function main() {
+    const re = regexVar();
+    const s = readLine();
+    
+    console.log(re.test(s));
+}
