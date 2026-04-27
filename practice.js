@@ -703,3 +703,18 @@ isPositive(0);
 isPositive(0);
 isPositive(-6);
 isPositive(-3);
+
+////////////////
+
+function main(r) {
+    const PI = Math.PI;
+    
+    
+    let area = PI*r*r;
+    let perimeter = 2*PI*r;
+    console.log('Area :',area);
+    console.log('Perimeter :',perimeter);
+}
+
+main(2.5);
+main(2);
