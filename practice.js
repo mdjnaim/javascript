@@ -685,3 +685,21 @@ function factorial(n){
    return result;
 }
 factorial(5);
+
+/////////////////
+
+function isPositive(a) {
+    if(a==0){
+        console.log("Zero Error");
+    }else if(a<0){
+        console.log("Negative Error");  
+    }else{
+        console.log("YES"); 
+    }
+}
+isPositive(5);
+isPositive(9);
+isPositive(0);
+isPositive(0);
+isPositive(-6);
+isPositive(-3);
