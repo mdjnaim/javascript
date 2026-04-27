@@ -754,3 +754,28 @@ console.log(getLetter('rtyui'));
 
 ////////////////
 
+function getSecondLargest(nums) {
+    let large = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > large) {
+            large = nums[i];
+        }
+    }
+    
+    while (nums.indexOf(large) !== -1) {
+        let index = nums.indexOf(large);
+        nums.splice(index, 1);
+    }
+    
+    let second = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > second) {
+            second = nums[i];
+        }
+    }
+
+    return second;
+}
+
+////////////////
+
