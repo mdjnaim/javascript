@@ -807,3 +807,22 @@ getCount([{x:1,y:1},
           {x:3,y:3},
           {x:5,y:6},
           {x:9,y:9}]);
+
+        
+/////////////////
+
+let arr = [100,200,150,300];
+let count = 0;
+let avg = 0;
+let sum = 0;
+for (let i=1; i<arr.length; i++){
+    sum += arr[i-1];
+   // console.log(sum);
+    avg = sum/i;
+    //console.log(avg);
+    if(avg<arr[i]){
+        count++;
+    }
+    
+}
+console.log(count);
