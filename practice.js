@@ -779,3 +779,13 @@ function getSecondLargest(nums) {
 
 ////////////////
 
+function Rectangle(a, b) {
+    this.length = a;
+    this.width = b;
+ this.perimeter = 2*(a+b);
+ console.log(perimeter);
+ this.area = a*b;  
+ console.log(area);
+}
+
+Rectangle(2,3);
