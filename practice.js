@@ -826,3 +826,18 @@ for (let i=1; i<arr.length; i++){
     
 }
 console.log(count);
+
+//////////////
+
+class Polygon {
+    constructor(sides) {
+        this.sides = sides;
+    }
+    perimeter() {
+        let sum = 0;
+        for (let side of this.sides) {
+            sum += side;
+        }
+        return sum;
+    }
+}
