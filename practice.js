@@ -885,3 +885,16 @@ function sides(literals, ...expressions) {
    return result;
 }
 sides`The area is: ${10 * 14}.The perimeter is: ${2 * (10 + 14)}.`;
+
+/////////////
+
+function oddEven(n){
+    for (let i = 1; i <= n; i++){
+        if(i % 2 == 0){
+            console.log(i*2);
+        }else{
+            console.log(i*3);
+        }
+    }
+}
+oddEven(6);
