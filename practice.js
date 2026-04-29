@@ -916,3 +916,15 @@ function maxValue(n,k){
 console.log(maxValue(5,2));
 console.log(maxValue(8,5));
 console.log(maxValue(2,2));
+
+////////////////
+
+function getDayName(dateString) {
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const date = new Date(dateString);
+    const dayName = days[date.getDay()];
+    
+    return dayName;
+}
+//DD-MM-YYYY
+console.log(getDayName("09/01/2021"));
