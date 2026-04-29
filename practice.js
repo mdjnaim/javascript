@@ -898,3 +898,21 @@ function oddEven(n){
     }
 }
 oddEven(6);
+
+///////////
+
+function maxValue(n,k){
+    let max = 0;
+    for (let i = 1; i < n; i++ ){
+        for (let j = i+1; j <= n; j++){
+            let value = i & j;
+            if(value < k && value > max ){
+                max = value;
+            }
+        }
+    }
+    return max;
+}
+console.log(maxValue(5,2));
+console.log(maxValue(8,5));
+console.log(maxValue(2,2));
