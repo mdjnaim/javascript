@@ -870,3 +870,18 @@ if (JSON.stringify(Object.getOwnPropertyNames(Square.prototype)) === JSON.string
     console.log(-1);
     console.log(-1);
 }
+
+////////////////////
+
+function sides(literals, ...expressions) {
+   let area = expressions[0];
+   let perimeter = expressions[1];
+   let semiperimeter = perimeter / 2;
+   let full = Math.sqrt((semiperimeter * semiperimeter) - 4 * area);
+   let l = (semiperimeter + full) / 2;
+   let w = (semiperimeter - full) / 2;
+   let result = [l,w].sort((a,b) => a - b);
+   console.log(result);
+   return result;
+}
+sides`The area is: ${10 * 14}.The perimeter is: ${2 * (10 + 14)}.`;
