@@ -943,3 +943,12 @@ regEx('Mr. X');
 regEx('Mrs.Y');
 regEx('Dr . Nahin');
 regEx('Er# HJ');
+ 
+/////////////////////
+
+function regEx(char){
+ const re = /\d+/g;
+ return char.match(re);
+}
+console.log(regEx("102, 1948948 and 1.3 and 4.5"));
+
