@@ -928,3 +928,18 @@ function getDayName(dateString) {
 }
 //DD-MM-YYYY
 console.log(getDayName("09/01/2021"));
+
+////////////////////////
+
+function regEx(char){
+ const re = /^(Mr|Mrs|Dr|Er)\.\s*[a-zA-Z]+$/;
+ if(re.test(char)){
+     console.log('true');
+ }else{
+     console.log('false');
+ }
+}
+regEx('Mr. X');
+regEx('Mrs.Y');
+regEx('Dr . Nahin');
+regEx('Er# HJ');
