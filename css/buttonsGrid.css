@@ -1,0 +1,11 @@
+#btns {
+    width: 100%;
+    font-size: 0;
+}
+
+#btns button {
+    width: 33.33%;
+    height: 48px;
+    font-size: 24px;
+    display: inline-block;
+}
